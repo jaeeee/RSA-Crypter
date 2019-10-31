@@ -89,7 +89,6 @@ int main()
         ifST.open("DecryptMe.txt");
         int tempint;
         std::vector<unsigned int> M;
-
         while (ifST >> tempint)
         {
             M.push_back(tempint);
@@ -116,19 +115,15 @@ int main()
                   std::cout << " ";
               }
           }
-          
           std::cout << std::endl;
-
           std::cout << "done!" << std::endl;
         break;
       }
     case 'e': //encrypt
       {
-        
         ifST.open("EncryptMe.txt");
         char tempchar;
         std::vector<char> L;
-
         while (ifST >> tempchar)
         {
           L.push_back(tempchar-63);  
@@ -138,8 +133,6 @@ int main()
 
         }
         ifST.close();
-
-
         int tempm;
         int j;
         for(i = 0; i < L.size(); i++){
